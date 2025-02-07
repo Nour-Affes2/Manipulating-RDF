@@ -1,0 +1,115 @@
+Prefix(:=<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8>
+
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#CheeseTopping>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DeepPan>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DomainConcept>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MargheritaPizza>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MeatTopping>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MozzarellaTopping>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MushroomTopping>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#NamedPizza>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ParmesanTopping>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#RealItalianPizza>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ThinAndCrispy>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#TomatoTopping>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetableTopping>))
+Declaration(Class(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetarianPizza>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#hasBase>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#hasTopping>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#CheeseTopping> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#CheeseTopping>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#CheeseTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping>)
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#CheeseTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MeatTopping>)
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#CheeseTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetableTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DeepPan> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DeepPan>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DeepPan> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase>)
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DeepPan> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ThinAndCrispy>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MargheritaPizza> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MargheritaPizza>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MargheritaPizza> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#NamedPizza>)
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MargheritaPizza> ObjectMinCardinality(1 <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#hasTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MozzarellaTopping>))
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MargheritaPizza> ObjectMinCardinality(1 <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#hasTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#TomatoTopping>))
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MargheritaPizza> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetarianPizza>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MeatTopping> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MeatTopping>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MeatTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping>)
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MeatTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetableTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MozzarellaTopping> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MozzarellaTopping>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MozzarellaTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#CheeseTopping>)
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MozzarellaTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ParmesanTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MushroomTopping> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MushroomTopping>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MushroomTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetableTopping>)
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#MushroomTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#TomatoTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#NamedPizza> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#NamedPizza>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#NamedPizza> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ParmesanTopping> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ParmesanTopping>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ParmesanTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#CheeseTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DomainConcept>)
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza> ObjectSomeValuesFrom(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#hasBase> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase>))
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza> ObjectSomeValuesFrom(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#hasTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping>))
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase>)
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DomainConcept>)
+DisjointClasses(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#DomainConcept>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#RealItalianPizza> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#RealItalianPizza>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#RealItalianPizza> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#Pizza>)
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#RealItalianPizza> ObjectSomeValuesFrom(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#hasBase> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ThinAndCrispy>))
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ThinAndCrispy> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ThinAndCrispy>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#ThinAndCrispy> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaBase>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#TomatoTopping> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#TomatoTopping>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#TomatoTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetableTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetableTopping> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetableTopping>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetableTopping> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#PizzaTopping>)
+
+# Class: <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetarianPizza> (<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetarianPizza>)
+
+SubClassOf(<http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#VegetarianPizza> <http://www.semanticweb.org/noura/ontologies/2025/1/untitled-ontology-8#NamedPizza>)
+
+
+)
